@@ -1,3 +1,4 @@
+import { AutenticacaoModule } from './autenticacao/autenticacao.module';
 import { RodapeModule } from './componentes/rodape/rodape.module';
 import { CabecalhoModule } from './componentes/cabecalho/cabecalho.module';
 import { HomeModule } from './home/home.module';
@@ -9,17 +10,16 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     CabecalhoModule,
-    RodapeModule
+    RodapeModule,
+    AutenticacaoModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

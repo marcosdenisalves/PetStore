@@ -25,7 +25,5 @@ export class ListaAnimaisComponent implements OnInit {
         return this.animaisService.listaDoUsuario(userName);
       })
     )
-
-    console.log(this.animais$);
   }
 }
